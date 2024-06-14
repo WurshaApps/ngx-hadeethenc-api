@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { firstValueFrom } from 'rxjs';
+import { firstValueFrom, Observable } from 'rxjs';
 import {
   categoriesResponse,
   hadeethsListResponse,
@@ -16,19 +16,21 @@ export class NgxHadeethencApiService {
 
   constructor(private http: HttpClient) {}
 
-  public getLanguages(): Promise<languageResponse[]> {
+  public getLanguages(): Observable<languageResponse[]> {
     const url = `${this.baseUrl}/languages`;
-    return firstValueFrom(this.http.get<languageResponse[]>(url));
+    return this.http.get<languageResponse[]>(url);
   }
 
-  public getCategoriesList(language: string): Promise<categoriesResponse[]> {
+  public getCategoriesList(language: string): Observable<categoriesResponse[]> {
     const url = `${this.baseUrl}/categories/list/?language=${language}`;
-    return firstValueFrom(this.http.get<categoriesResponse[]>(url));
+    return this.http.get<categoriesResponse[]>(url);
   }
 
-  public getCategoriesRoots(language: string): Promise<categoriesResponse[]> {
+  public getCategoriesRoots(
+    language: string
+  ): Observable<categoriesResponse[]> {
     const url = `${this.baseUrl}/categories/roots/?language=${language}`;
-    return firstValueFrom(this.http.get<categoriesResponse[]>(url));
+    return this.http.get<categoriesResponse[]>(url);
   }
 
   public getHadeethsList(p: {
@@ -36,16 +38,48 @@ export class NgxHadeethencApiService {
     categoryId: string;
     page: string;
     perPage: string;
-  }): Promise<hadeethsListResponse> {
+  }): Observable<hadeethsListResponse> {
     const url = `${this.baseUrl}/hadeeths/list/?language=${p.language}&category_id=${p.categoryId}&page=${p.page}&per_page=${p.perPage}`;
-    return firstValueFrom(this.http.get<hadeethsListResponse>(url));
+    return this.http.get<hadeethsListResponse>(url);
   }
 
   public getHadeethsOne(p: {
     language: string;
     id: string;
-  }): Promise<hadeethsOneResponse> {
+  }): Observable<hadeethsOneResponse> {
     const url = `${this.baseUrl}/hadeeths/one/?language=${p.language}&id=${p.id}`;
-    return firstValueFrom(this.http.get<hadeethsOneResponse>(url));
+    return this.http.get<hadeethsOneResponse>(url);
+  }
+
+  public getLanguagesAsync(): Promise<languageResponse[]> {
+    return firstValueFrom(this.getLanguages());
+  }
+
+  public getCategoriesListAsync(
+    language: string
+  ): Promise<categoriesResponse[]> {
+    return firstValueFrom(this.getCategoriesList(language));
+  }
+
+  public getCategoriesRootsAsync(
+    language: string
+  ): Promise<categoriesResponse[]> {
+    return firstValueFrom(this.getCategoriesRoots(language));
+  }
+
+  public getHadeethsListAsync(p: {
+    language: string;
+    categoryId: string;
+    page: string;
+    perPage: string;
+  }): Promise<hadeethsListResponse> {
+    return firstValueFrom(this.getHadeethsList(p));
+  }
+
+  public getHadeethsOneAsync(p: {
+    language: string;
+    id: string;
+  }): Promise<hadeethsOneResponse> {
+    return firstValueFrom(this.getHadeethsOne(p));
   }
 }
