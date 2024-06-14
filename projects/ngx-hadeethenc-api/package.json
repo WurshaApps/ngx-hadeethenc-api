@@ -1,6 +1,31 @@
 {
-  "name": "ngx-hadeethenc-api",
+  "name": "@wursha/ngx-hadeethenc-api",
   "version": "0.0.1",
+  "description": "an Angular api client for hadeethenc.com/api",
+  "keywords": [
+    "hadeethenc",
+    "muhammad",
+    "prophet",
+    "sunna",
+    "islam",
+    "muslim",
+    "api",
+    "angular",
+    "ngx",
+    "hadeeth",
+    "hadith"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WurshaApps/ngx-hadeethenc-api.git",
+    "directory": "projects/ngx-hadeethenc-api"
+  },
+  "author": "Muhammad Assar <m.assar@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WurshaApps/ngx-hadeethenc-api/issues"
+  },
+  "homepage": "https://github.com/WurshaApps/ngx-hadeethenc-api/tree/main/projects/ngx-hadeethenc-api",
   "peerDependencies": {
     "@angular/common": "^18.0.0",
     "@angular/core": "^18.0.0"
