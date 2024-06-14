@@ -17,8 +17,8 @@ describe('NgxHadeethencApiService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('#getLanguages should return real value', async () => {
-    const languages = await service.getLanguages();
+  it('#getLanguagesAsync should return real value', async () => {
+    const languages = await service.getLanguagesAsync();
     expect(languages).toContain({
       code: 'ar',
       native: 'عربي',
