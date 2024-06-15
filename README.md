@@ -91,7 +91,7 @@ and make sure that `HttpClient` is provided
 import { provideHttpClient } from "@angular/common/http";
 
 export const appConfig: ApplicationConfig = {
-    providers: [...provideHttpClient()],
+    providers: [... , provideHttpClient()],
 };
 ```
 
@@ -160,7 +160,7 @@ interface hadeethsOneResponse {
     grade: string;
     explanation: string;
     hints: string[];
-    categories: any[];
+    categories: string[];
     translations: string[];
     words_meanings: wordsMeaning[];
     reference: string;
