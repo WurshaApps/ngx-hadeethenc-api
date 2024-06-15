@@ -3,18 +3,19 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start:demo": "ng serve demo",
+    "build:demo": "ng build demo",
     "build:lib": "ng build ngx-hadeethenc-api",
     "publish": "npm run build:lib && cd dist/ngx-hadeethenc-api && npm publish --access public",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "watch:demo": "ng build demo --watch --configuration development",
+    "test:demo": "ng test demo",
     "test:lib": "ng test ngx-hadeethenc-api"
   },
   "private": true,
   "dependencies": {
     "@angular/common": "^18.0.0",
     "@angular/core": "^18.0.0",
+    "@angular/router": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
