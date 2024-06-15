@@ -1,7 +1,7 @@
 {
     "name": "@wursha/ngx-hadeethenc-api",
     "version": "0.0.2",
-    "description": "an Angular api client for hadeethenc.com/api",
+    "description": "an Angular api client for hadeethenc.com",
     "keywords": [
         "hadeethenc",
         "muhammad",

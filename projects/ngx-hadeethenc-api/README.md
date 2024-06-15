@@ -1,6 +1,6 @@
 # ngx-hadeethenc-api
 
-an Angular api client for hadeethenc.com/api
+an Angular api client for hadeethenc.com
 
 ## Overview
 

@@ -9,7 +9,7 @@ import {
 } from './ngx-hadeethenc-api.model';
 
 /**
- * an Angular api client for hadeethenc.com/api
+ * an Angular api client for hadeethenc.com
  */
 @Injectable({
     providedIn: 'root',
