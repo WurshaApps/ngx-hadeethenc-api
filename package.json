@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:lib": "ng build ngx-hadeethenc-api",
-    "publish": "npm run build:lib && cd dist/ngx-hadeethenc-api && npm publish",
+    "publish": "npm run build:lib && cd dist/ngx-hadeethenc-api && npm publish --access public",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:lib": "ng test ngx-hadeethenc-api"

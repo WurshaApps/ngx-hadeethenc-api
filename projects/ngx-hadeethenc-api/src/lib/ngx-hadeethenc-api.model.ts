@@ -1,10 +1,16 @@
 export interface hadeethsOneResponse {
   id: string;
   title: string;
+  /**
+   * matn
+   */
   hadeeth: string;
   attribution: string;
   grade: string;
   explanation: string;
+  /**
+   * fawaed
+   */
   hints: string[];
   categories: any[];
   translations: string[];
