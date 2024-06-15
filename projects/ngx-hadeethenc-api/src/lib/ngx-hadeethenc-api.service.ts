@@ -34,7 +34,7 @@ export class NgxHadeethencApiService {
      * @returns array of json objects each object represents a category.
      */
     public getCategoriesList(
-        language: string
+        language: string,
     ): Observable<categoriesResponse[]> {
         const url = `${this.baseUrl}/categories/list/?language=${language}`;
         return this.http.get<categoriesResponse[]>(url);
@@ -46,7 +46,7 @@ export class NgxHadeethencApiService {
      * @returns root categories (main categories) in specific language, it accepts language iso code and returns json array of objects each object represents a root category.
      */
     public getCategoriesRoots(
-        language: string
+        language: string,
     ): Observable<categoriesResponse[]> {
         const url = `${this.baseUrl}/categories/roots/?language=${language}`;
         return this.http.get<categoriesResponse[]>(url);
