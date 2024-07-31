@@ -52,7 +52,7 @@ Contents of the project can be used, with the following terms and conditions:
         -   [categoriesResponse](#categoriesresponse)
         -   [hadeethsListResponse](#hadeethslistresponse)
     -   [Core Team](#core-team)
-
+    -   [Other libs from the author](#other-libs-from-the-author)
 <!-- TOC end -->
 
 ## Installation
