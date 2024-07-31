@@ -39,6 +39,7 @@ Contents of the project can be used, with the following terms and conditions:
         -   [Yarn](#yarn)
         -   [PNPM](#pnpm)
         -   [Bun](#bun)
+    -   [Getting Started](#getting-started)
     -   [Available API endpoints:](#available-api-endpoints)
         -   [List all available languages for HadeethEnc.com](#list-all-available-languages-for-hadeethenccom)
         -   [List all categories by language code.](#list-all-categories-by-language-code)
@@ -51,7 +52,7 @@ Contents of the project can be used, with the following terms and conditions:
         -   [categoriesResponse](#categoriesresponse)
         -   [hadeethsListResponse](#hadeethslistresponse)
     -   [Core Team](#core-team)
-
+    -   [Other libs from the author](#other-libs-from-the-author)
 <!-- TOC end -->
 
 ## Installation
@@ -226,3 +227,10 @@ interface hadeethsListMeta {
     <td align="center"><a href="https://github.com/MuhAssar"><img src="https://avatars.githubusercontent.com/u/2022065?v=4" width="100px;" alt="Netanel Basal"/><br /><sub><b>Muhammad Assar</b></sub></a></td>
     </tr>
 </table>
+
+## Other libs from the author
+
+If you enjoy working with TypeScript, we also recommend other libraries by the same author:
+
+-   [ngx-prayertimes-api](https://github.com/WurshaApps/ngx-prayertimes-api/) - 🕋 🚀 An Angular api client for [Prayer Times API](https://aladhan.com/prayer-times-api)
+-   [@wursha/ngx-prayertimes-api](https://www.npmjs.com/package/@wursha/ngx-prayertimes-api) - npm package with built-in type declarations
