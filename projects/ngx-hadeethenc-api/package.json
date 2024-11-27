@@ -1,6 +1,6 @@
 {
     "name": "@wursha/ngx-hadeethenc-api",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "an Angular api client for hadeethenc.com",
     "keywords": [
         "hadeethenc",
@@ -27,8 +27,8 @@
     },
     "homepage": "https://github.com/WurshaApps/ngx-hadeethenc-api/tree/main/projects/ngx-hadeethenc-api",
     "peerDependencies": {
-        "@angular/common": "^18.0.0",
-        "@angular/core": "^18.0.0"
+        "@angular/common": "^19.0.0||^18.0.0||^17.0.0||^16.0.0||^15.0.0",
+        "@angular/core": "^19.0.0||^18.0.0||^17.0.0||^16.0.0||^15.0.0"
     },
     "dependencies": {
         "tslib": "^2.3.0"

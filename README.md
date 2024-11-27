@@ -219,6 +219,15 @@ interface hadeethsListMeta {
     per_page: string;
 }
 ```
+## Contributing
+
+Feel free to submit a pull request for bugs or additions, and make sure to update tests as appropriate. If you find a mistake in the docs, send a PR! Even the smallest changes help.
+
+For major changes, open an issue first to discuss what you'd like to change.
+
+## ⭐ Found It Helpful? [Star It!](https://github.com/WurshaApps/ngx-hadeethenc-api/stargazers)
+
+If you found this project helpful, let the community know by giving it a [star](https://github.com/WurshaApps/ngx-hadeethenc-api/stargazers): [👉⭐](https://github.com/WurshaApps/ngx-hadeethenc-api/stargazers)
 
 ## Core Team
 
@@ -234,3 +243,4 @@ If you enjoy working with TypeScript, we also recommend other libraries by the s
 
 -   [ngx-prayertimes-api](https://github.com/WurshaApps/ngx-prayertimes-api/) - 🕋 🚀 An Angular api client for [Prayer Times API](https://aladhan.com/prayer-times-api)
 -   [@wursha/ngx-prayertimes-api](https://www.npmjs.com/package/@wursha/ngx-prayertimes-api) - npm package with built-in type declarations
+-   [github-project-exporter](https://github.com/MuhAssar/github-project-exporter/) - A tool to export [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects) to JSON or CSV file format
